@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "3189583f-c86b-46a0-9bcd-9c6b3ea44039",
+		"name": "ps1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/posts/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"I love my dog!\",\n    \"link\": \"https://i.imgur.com/XsaLqi1.jpg\",\n    \"username\": \"raahi014\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/posts/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a post by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/posts/1/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/posts/2/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get comments by post id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/posts/5/comments/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"what a cute puppy aww\",\n  \"username\": \"raahi014\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/posts/1/comments/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"1",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a comment from a post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"what a cute puppy aww (edit): omg ty for the likes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/api/posts/1/comments/1/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"1",
+						"comments",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
