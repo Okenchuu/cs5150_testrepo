@@ -7,21 +7,21 @@ from flask import request
 app = Flask(__name__)
 
 posts = {
-    0: {
-        "id": 0,
-        "upvotes": 1,
-        "title": "My cat is the cutest!",
-        "link": "https://i.imgur.com/jseZqNK.jpg",
-        "username": "alicia98",
-        "comments":{
-            0: {
-                "id": 0,
-                "upvotes": 8,
-                "text": "Wow, my first Reddit gold!",
-                "username": "alicia98",
-            }
-        }
-    },
+    # 0: {
+    #     "id": 0,
+    #     "upvotes": 1,
+    #     "title": "My cat is the cutest!",
+    #     "link": "https://i.imgur.com/jseZqNK.jpg",
+    #     "username": "alicia98",
+    #     "comments":{
+    #         0: {
+    #             "id": 0,
+    #             "upvotes": 8,
+    #             "text": "Wow, my first Reddit gold!",
+    #             "username": "alicia98",
+    #         }
+    #     }
+    # },
     1: {
         "id": 1,
         "upvotes": 3,
